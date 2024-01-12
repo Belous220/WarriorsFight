@@ -13,8 +13,15 @@ namespace TestApp1
         {
             Random rand = new Random();
             float health1 = rand.Next(80, 140); //Так как здоровье у нас может быть значнием с точкой - float!!!
-            int armor1 = rand.Next(30,60);
-            int damage1 = rand.Next(5,6);
+            int armor1 = rand.Next(30, 60);
+            int damage1 = rand.Next(5, 6);
+
+            string[] WarriorsNames = { "Pasha", "Arina", "Elena", "Helga",
+                                "Vanya", "Dasha","Mark", "Ulius","Varus"};
+            
+            int nIndex1 = rand.Next(WarriorsNames.Length);
+            int nIndex2 = rand.Next(WarriorsNames.Length);
+
 
             float health2 = rand.Next(75, 180);
             int armor2 = rand.Next(30, 60);
